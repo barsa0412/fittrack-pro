@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - FitTrack Pro</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js MUST load before script.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="toggle-container">
+    <div class="toggle-btn"></div>
+  </div>
+
+  <div class="dashboard container">
+
+    <div class="card">
+      <h2>Add Workout</h2>
+      <form id="workoutForm">
+        <input type="text" id="exercise" placeholder="Exercise" required>
+        <input type="number" id="duration" placeholder="Duration (minutes)" required>
+        <input type="number" id="calories" placeholder="Calories Burned" required>
+        <button type="submit">Add Workout</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Total Calories Burned</h2>
+      <h1 id="totalCalories">0</h1>
+    </div>
+
+    <div class="card">
+      <h2>Workout History</h2>
+      <ul id="workoutList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Weekly Progress</h2>
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="card">
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
