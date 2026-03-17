@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://fittrack-pro-qldc.onrender.com/api";
 
 let chart;
 
